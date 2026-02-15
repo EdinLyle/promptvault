@@ -267,7 +267,7 @@ promptvault/
 
 ## 开源协议
 
-本项目采用 **MIT 许可证** 开源。
+本项目采用 **[麻省理工学院许可](https://github.com/EdinLyle/promptvault/blob/main/LICENSE)** 开源。
 
 ## 贡献指南
 
