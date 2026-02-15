@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptVault - 提示词管理器</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- 顶部导航栏 -->
+    <header class="header">
+      <h1>PromptVault</h1>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="搜索提示词...">
+        <button id="search-button">🔍</button>
+      </div>
+    </header>
+    
+    <div class="main-layout">
+      <!-- 左侧边栏 -->
+      <aside class="sidebar">
+        <!-- 分类标签 -->
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">全部</button>
+          <button class="category-tab" data-category="favorite">⭐ 收藏</button>
+          <!-- 分类标签将通过JavaScript动态添加 -->
+        </div>
+      </aside>
+
+      <!-- 主内容区 -->
+      <main class="content">
+        <!-- 提示词列表 -->
+        <div class="prompt-list" id="prompt-list">
+          <!-- 提示词项将通过JavaScript动态添加 -->
+          <div class="empty-state" id="empty-state">
+            <div class="empty-icon">📝</div>
+            <h3>还没有提示词</h3>
+            <p>点击下方按钮创建第一个提示词</p>
+            <button id="create-first-prompt">创建提示词</button>
+          </div>
+        </div>
+
+        <!-- 底部操作栏 -->
+        <div class="bottom-actions">
+          <button id="create-prompt">+ 创建提示词</button>
+          <button id="import-export">📤 导入导出</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- 创建/编辑提示词对话框 -->
+  <div class="modal" id="prompt-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-title">创建提示词</h2>
+        <button id="close-modal">×</button>
+      </div>
+      <div class="modal-body">
+        <form id="prompt-form">
+          <div class="form-group">
+            <label for="prompt-title">标题 *</label>
+            <input type="text" id="prompt-title" placeholder="输入提示词标题" required>
+          </div>
+          <div class="form-group">
+            <label for="prompt-description">描述</label>
+            <textarea id="prompt-description" placeholder="输入提示词描述"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="prompt-category">分类</label>
+            <select id="prompt-category">
+              <!-- 分类选项将通过JavaScript动态添加 -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="prompt-tags">标签（用逗号分隔）</label>
+            <input type="text" id="prompt-tags" placeholder="例如：写作,创意,邮件">
+          </div>
+          <div class="form-group">
+            <label for="prompt-platform">适用平台</label>
+            <div class="platform-selector">
+              <label><input type="checkbox" value="chatgpt"> ChatGPT</label>
+              <label><input type="checkbox" value="claude"> Claude</label>
+              <label><input type="checkbox" value="gemini"> Gemini</label>
+              <label><input type="checkbox" value="universal"> 通用</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="prompt-content">提示词内容 *</label>
+            <textarea id="prompt-content" placeholder="输入提示词内容，支持 {{变量名}} 模板语法" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="prompt-favorite"> 收藏此提示词
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="cancel-prompt">取消</button>
+        <button id="save-prompt" class="primary">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导入导出对话框 -->
+  <div class="modal" id="import-export-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>导入导出</h2>
+        <button id="close-import-export-modal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="import-export-tabs">
+          <button class="tab active" data-tab="export">导出</button>
+          <button class="tab" data-tab="import">导入</button>
+        </div>
+        <div class="tab-content" id="export-content">
+          <p>导出所有提示词为JSON文件</p>
+          <button id="export-button">导出JSON</button>
+        </div>
+        <div class="tab-content" id="import-content" style="display: none;">
+          <p>从JSON文件导入提示词</p>
+          <input type="file" id="import-file" accept=".json">
+          <button id="import-button">导入</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

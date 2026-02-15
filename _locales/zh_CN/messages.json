@@ -1,0 +1,125 @@
+{
+  "extensionName": {
+    "message": "PromptVault - 提示词管理器"
+  },
+  "extensionDescription": {
+    "message": "高效管理、快速调用和智能优化AI提示词，支持多平台适配"
+  },
+  "popupTitle": {
+    "message": "PromptVault"
+  },
+  "searchPlaceholder": {
+    "message": "搜索提示词..."
+  },
+  "categoryAll": {
+    "message": "全部"
+  },
+  "categoryFavorite": {
+    "message": "⭐ 收藏"
+  },
+  "emptyStateTitle": {
+    "message": "还没有提示词"
+  },
+  "emptyStateDescription": {
+    "message": "点击下方按钮创建第一个提示词"
+  },
+  "createPromptButton": {
+    "message": "+ 创建提示词"
+  },
+  "importExportButton": {
+    "message": "📤 导入导出"
+  },
+  "createFirstPromptButton": {
+    "message": "创建提示词"
+  },
+  "modalTitleCreate": {
+    "message": "创建提示词"
+  },
+  "modalTitleEdit": {
+    "message": "编辑提示词"
+  },
+  "formTitle": {
+    "message": "标题 *"
+  },
+  "formDescription": {
+    "message": "描述"
+  },
+  "formCategory": {
+    "message": "分类"
+  },
+  "formTags": {
+    "message": "标签（用逗号分隔）"
+  },
+  "formPlatform": {
+    "message": "适用平台"
+  },
+  "formContent": {
+    "message": "提示词内容 *"
+  },
+  "formFavorite": {
+    "message": "收藏此提示词"
+  },
+  "formPlaceholderTitle": {
+    "message": "输入提示词标题"
+  },
+  "formPlaceholderDescription": {
+    "message": "输入提示词描述"
+  },
+  "formPlaceholderTags": {
+    "message": "例如：写作,创意,邮件"
+  },
+  "formPlaceholderContent": {
+    "message": "输入提示词内容，支持 {{变量名}} 模板语法"
+  },
+  "buttonCancel": {
+    "message": "取消"
+  },
+  "buttonSave": {
+    "message": "保存"
+  },
+  "modalTitleImportExport": {
+    "message": "导入导出"
+  },
+  "tabExport": {
+    "message": "导出"
+  },
+  "tabImport": {
+    "message": "导入"
+  },
+  "exportDescription": {
+    "message": "导出所有提示词为JSON文件"
+  },
+  "importDescription": {
+    "message": "从JSON文件导入提示词"
+  },
+  "buttonExport": {
+    "message": "导出JSON"
+  },
+  "buttonImport": {
+    "message": "导入"
+  },
+  "contextMenuMain": {
+    "message": "PromptVault"
+  },
+  "contextMenuCreateFromSelection": {
+    "message": "从选中文本创建提示词"
+  },
+  "contextMenuRecent": {
+    "message": "最近使用"
+  },
+  "contextMenuFavorites": {
+    "message": "收藏的提示词"
+  },
+  "contextMenuOpenManager": {
+    "message": "打开提示词管理器"
+  },
+  "notificationSuccess": {
+    "message": "操作成功"
+  },
+  "notificationError": {
+    "message": "操作失败"
+  },
+  "notificationInfo": {
+    "message": "提示信息"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "extensionName": {
+    "message": "PromptVault - Prompt Manager"
+  },
+  "extensionDescription": {
+    "message": "Efficiently manage, quickly call, and intelligently optimize AI prompts, supporting multi-platform adaptation"
+  },
+  "popupTitle": {
+    "message": "PromptVault"
+  },
+  "searchPlaceholder": {
+    "message": "Search prompts..."
+  },
+  "categoryAll": {
+    "message": "All"
+  },
+  "categoryFavorite": {
+    "message": "⭐ Favorites"
+  },
+  "emptyStateTitle": {
+    "message": "No prompts yet"
+  },
+  "emptyStateDescription": {
+    "message": "Click the button below to create your first prompt"
+  },
+  "createPromptButton": {
+    "message": "+ Create Prompt"
+  },
+  "importExportButton": {
+    "message": "📤 Import/Export"
+  },
+  "createFirstPromptButton": {
+    "message": "Create Prompt"
+  },
+  "modalTitleCreate": {
+    "message": "Create Prompt"
+  },
+  "modalTitleEdit": {
+    "message": "Edit Prompt"
+  },
+  "formTitle": {
+    "message": "Title *"
+  },
+  "formDescription": {
+    "message": "Description"
+  },
+  "formCategory": {
+    "message": "Category"
+  },
+  "formTags": {
+    "message": "Tags (comma separated)"
+  },
+  "formPlatform": {
+    "message": "Platforms"
+  },
+  "formContent": {
+    "message": "Prompt Content *"
+  },
+  "formFavorite": {
+    "message": "Favorite this prompt"
+  },
+  "formPlaceholderTitle": {
+    "message": "Enter prompt title"
+  },
+  "formPlaceholderDescription": {
+    "message": "Enter prompt description"
+  },
+  "formPlaceholderTags": {
+    "message": "e.g., writing,creative,email"
+  },
+  "formPlaceholderContent": {
+    "message": "Enter prompt content, support {{variable}} template syntax"
+  },
+  "buttonCancel": {
+    "message": "Cancel"
+  },
+  "buttonSave": {
+    "message": "Save"
+  },
+  "modalTitleImportExport": {
+    "message": "Import/Export"
+  },
+  "tabExport": {
+    "message": "Export"
+  },
+  "tabImport": {
+    "message": "Import"
+  },
+  "exportDescription": {
+    "message": "Export all prompts as JSON file"
+  },
+  "importDescription": {
+    "message": "Import prompts from JSON file"
+  },
+  "buttonExport": {
+    "message": "Export JSON"
+  },
+  "buttonImport": {
+    "message": "Import"
+  },
+  "contextMenuMain": {
+    "message": "PromptVault"
+  },
+  "contextMenuCreateFromSelection": {
+    "message": "Create prompt from selection"
+  },
+  "contextMenuRecent": {
+    "message": "Recently Used"
+  },
+  "contextMenuFavorites": {
+    "message": "Favorites"
+  },
+  "contextMenuOpenManager": {
+    "message": "Open Prompt Manager"
+  },
+  "notificationSuccess": {
+    "message": "Operation successful"
+  },
+  "notificationError": {
+    "message": "Operation failed"
+  },
+  "notificationInfo": {
+    "message": "Information"
+  }
+}
