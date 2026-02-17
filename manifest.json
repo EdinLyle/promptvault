@@ -36,5 +36,8 @@
       "48": "assets/icons/icon-48.png",
       "128": "assets/icons/icon-128.png"
     }
+  },
+  "icons": {
+    "128": "FrontRecon_tool.png"
   }
 }
